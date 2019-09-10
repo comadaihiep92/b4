@@ -1,0 +1,13 @@
+mixin banner(title, des, href, name)
+    h1.banner__title= title
+    p.banner__description= des
+    |
+    |
+    a(href=href)&attributes(attributes)= name
+
+//- +banner(
+//-     "All your files in one secure lacation, accessible anywhere.",
+//-     "| Fylo stores all your most important files in one secure location. Access them whereer you need, share and collaborate with friends, family and co-workers.",
+//-     "#",
+//-     "Get Started"
+//- )

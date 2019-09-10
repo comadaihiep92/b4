@@ -1,0 +1,48 @@
+// Footer
+include ../mixins/menu.pug
+footer.footer.page__footer
+
+    .container.mt-5
+        // Footer contact
+        .footer__logo.row.justify-content-sm-center.justify-content-md-start.pb-3
+            img.footer__image(src="../images/logo.svg")
+        .row
+            .footer__contact.col-md-6
+                p.footer__description.text-sm-center.text-md-left Receive updates from us, including tips and tricks on how to improve your workflow.search-zone
+                .footer__input
+                    input.footer__input-text.col-md-7.p-3(type="text")
+                    a.button__join.badge.badge-success.col-md-4.px-5.py-4.mt-sm-2.ml-md-3(href="") Join
+                .footer__info.text-sm-center.mt-sm-2.text-md-left.mt-md-2
+                    img.footer__call.mr-3(src="../images/icon-phone.svg") 
+                    span.footer__phone-number Phone: +1-543-123-4567
+                .footer__info.text-sm-center.mt-sm-2.text-md-left.mt-md-2
+                    img.footer__email.mr-3(src="../images/icon-email.svg") 
+                    span.footer__email-address example@fylo.com
+                
+            // Footer menu
+            .footer__menu.col-md-6
+                .row.text-sm-center.text-md-left
+                    .footer__container.col-md-4
+                        h3.footer__menu-title Fylo
+                        ul.footer__menu-list.p-0.nav.flex-column
+                            +menu(
+                                ["Destop App", "Mobile App", "Pricing", "Feature"],
+                                "footer__menu-item",
+                                "#"
+                            )(class="footer__menu-link")
+                    .footer__container.col-md-4
+                        h3.footer__menu-title Company
+                        ul.footer__menu-list.p-0.nav.flex-column
+                            +menu(
+                                ["About Us", "Jobs", "Press", "Blog"],
+                                "footer__menu-item",
+                                "#"
+                            )(class="footer__menu-link")             
+                    .footer__container.col-md-4
+                        h3.footer__menu-title Support
+                        ul.footer__menu-list.p-0.nav.flex-column
+                            +menu(
+                                ["Contact Us", "Terms", "Privacy"],
+                                "footer__menu-item",
+                                "#"
+                            )(class="footer__menu-link")

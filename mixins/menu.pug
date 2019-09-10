@@ -1,0 +1,5 @@
+mixin menu(list, classLi, href)
+    - var menuName= list
+    each val in menuName
+        li(class= classLi)
+            a(href= href)&attributes(attributes)= val

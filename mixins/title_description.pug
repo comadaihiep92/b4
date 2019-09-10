@@ -1,0 +1,7 @@
+mixin titleDescription(title, des, href, name)
+    h1.content__title= title
+    p.content__description= des
+    if href
+        |
+        |
+        a(href= href)&attributes(attributes)= name

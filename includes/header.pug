@@ -1,0 +1,37 @@
+// Header
+include ../mixins/logo.pug
+include ../mixins/menu.pug
+include ../mixins/banner.pug
+header.header.page__header.container
+    // Logo and Menu
+    nav.menu.row.justify-content-between.navbar.navbar-expand-md
+        // Logo
+        |
+        |
+        +logo("#", "", "logo__image navbar-brand","../images/logo.svg", "img")(class="logo")
+        // Menu
+        ul.menu__list.menu__left.navbar-nav
+            +menu(
+                ["Home", "About", "Contact", "Price"],
+                "menu__item nav-item px-5 py-3",
+                "#"
+            )(class="menu__link .nav-link")
+        ul.menu__list.menu__right.navbar-nav
+            +menu(
+                ["Sign In", "Sign Up"],
+                "menu__item p-3",
+                "#"
+            )(class="menu__link")
+    // Banner
+    .header__background
+        img(src="../images/bg-intro-desktop.svg", alt="")
+    .banner.row.align-items-center
+        .banner__info.col-md-5.text-md-left.col-sm-12.text-sm-center
+            +banner(
+                "All your files in one secure lacation, accessible anywhere.",
+                "Fylo stores all your most important files in one secure location. Access them whereer you need, share and collaborate with friends, family and co-workers.",
+                "#",
+                "Get Started"
+            )(class="button__get-start badge badge-success px-5 py-4")
+        .banner__image.col-md-7.text-md-right.col-sm-12.text-sm-center
+            img(src="../images/illustration-main.svg", alt="image")

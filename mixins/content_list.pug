@@ -1,0 +1,20 @@
+//- mixin contentList(item, classImg, src, alt, classTitle, title, classDes, des)
+//-     div(class= item)
+//-         |
+//-         |
+//-         img(class= classImg, src= src, alt= alt)
+//-         if classTitle || title
+//-             h1(class= classTitle)= title
+//-             p(class= classDes)= des
+//-         else
+//-             p(class= classDes)= des
+
+mixin contentList(item, classDiv, classImg, src, alt, classTitle, title, classDes, des)
+    div(class= item)
+        div(class= classDiv)
+            img(class= classImg, src= src, alt= alt)
+        if classTitle || title
+            h1(class= classTitle)= title
+            p(class= classDes)= des
+        else
+            p(class= classDes)= des

@@ -1,0 +1,127 @@
+// Content
+include ../mixins/content_list.pug
+include ../mixins/title_description.pug
+section.content.page__content
+    //- .content__image
+    // Product
+    .container
+        .product
+            .content__image.container-fluid.badge-danger
+            .product__heading.text-center
+                +titleDescription(
+                    "Stay productive, wherever you are", 
+                    "Never let location be an issue when accessing your file. Fylo has you covered for all of your file storage needs.",
+                    ""
+                )
+            .product__list.row.text-center
+                +contentList(
+                    "product__item col-md-4 col-sm-12", 
+                    "product__container__image",
+                    "product__image", 
+                    "../images/icon-devices.svg", 
+                    "image alt", 
+                    "", 
+                    "", 
+                    "prodcut__description", 
+                    "All flatforms, all devices, all your file")
+                +contentList(
+                    "product__item col-md-4 col-sm-12", 
+                    "product__container__image",
+                    "product__image", 
+                    "../images/icon-security.svg", 
+                    "image alt", 
+                    "", 
+                    "", 
+                    "prodcut__description", 
+                    "Security you can trust")
+                +contentList(
+                    "product__item col-md-4 col-sm-12", 
+                    "product__container__image",
+                    "product__image", 
+                    "../images/icon-collaboration.svg", 
+                    "image alt", 
+                    "", 
+                    "", 
+                    "prodcut__description", 
+                    "Real-time collaboration")
+        // Connect
+        .connect.row.align-items-center
+            .connect__heading.col-md-5.text-left.text-sm-center
+                +titleDescription(
+                    "Connect with the apps you use everyday", 
+                    "Fylo seamlessly integrates with hundreds of apps, meaning you can access and work on your files from the apps you already know and love.",
+                    ""
+                )
+            .connect__list.col-md-7
+                .row.text-center.p-3.justify-content-between
+                    .row
+                        +contentList(
+                            "connect__item col-md border border-primary p-0 ml-md-2 mb-md-2", 
+                            "connect__container__image",
+                            "connect__image", 
+                            "../images/logo-slack.png", 
+                            "image alt", 
+                            "connect__title px-2", 
+                            "Slack", 
+                            "connect__description px-2", 
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id vaarius eros, vel pharetra est.")
+                        +contentList(
+                            "connect__item col-md border border-primary p-0 ml-md-2 mb-md-2", 
+                            "connect__container__image",
+                            "connect__image", 
+                            "../images/logo-asana.png", 
+                            "image alt", 
+                            "connect__title px-2", 
+                            "Asana", 
+                            "connect__description px-2", 
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id vaarius eros, vel pharetra est.")
+                        +contentList(
+                            "connect__item col-md border border-primary p-0 ml-md-2 mb-md-2", 
+                            "connect__container__image",
+                            "connect__image", 
+                            "../images/logo-gsuite.png", 
+                            "image alt", 
+                            "connect__title px-2", 
+                            "GSuite", 
+                            "connect__description px-2", 
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id vaarius eros, vel pharetra est.")
+                    .row
+                        +contentList(
+                            "connect__item col-md border border-primary p-0 ml-md-2 mb-md-2", 
+                            "connect__container__image",
+                            "connect__image", 
+                            "../images/logo-salesforce.png", 
+                            "image alt", 
+                            "connect__title px-2", 
+                            "Salesforce", 
+                            "connect__description px-2", 
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id vaarius eros, vel pharetra est.")
+                        +contentList(
+                            "connect__item col-md border border-primary p-0 ml-md-2 mb-md-2", 
+                            "connect__container__image",
+                            "connect__image", 
+                            "../images/logo-trello.png", 
+                            "image alt", 
+                            "connect__title px-2", 
+                            "Trello", 
+                            "connect__description px-2", 
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id vaarius eros, vel pharetra est.")
+                        +contentList(
+                            "connect__item col-md border border-primary p-0 ml-md-2 mb-md-2", 
+                            "connect__container__image",
+                            "connect__image", 
+                            "../images/logo-typeform.png", 
+                            "image alt", 
+                            "connect__title px-2", 
+                            "Typeform", 
+                            "connect__description px-2", 
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id vaarius eros, vel pharetra est.")
+        // Start
+        .start.container.text-center
+            .start__heading
+                +titleDescription(
+                    "Start using Fylo today",
+                    "It only takes a minute to sign up and our tree starter tier is extremely generous. If you have any questions, our support team would be happy to help you.",
+                    "#",
+                    "Get Started"
+                )(class="button__get-start badge badge-success px-5 py-4")

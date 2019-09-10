@@ -1,0 +1,7 @@
+mixin logo(href, name, classImg, src, alt) 
+    a(href=href)&attributes(attributes)= name
+        |
+        |
+        img(class= classImg, src=src, alt=alt)
+
+//- +logo("#", null, "../../images/logo.svg", "img")(class="logo")
